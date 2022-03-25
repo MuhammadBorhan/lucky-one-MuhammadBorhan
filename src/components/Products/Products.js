@@ -11,12 +11,16 @@ const Products = () => {
     }, []);
     return (
         <div className='products'>
-            <div className='products-info'>
+            <div className='products-display'>
                 {
                     products.map(product => <Product key={product.id} product={product}></Product>)
                 }
             </div>
-            <div>right</div>
+            <div className='selected-phone'>
+                <h4>Selected Phones</h4>
+                <button>CHOOSE 1 FOR ME</button><br></br>
+                <button>CHOOSE AGAIN</button>
+            </div>
         </div>
     );
 };

@@ -1,8 +1,27 @@
 .products{
     display: grid;
     grid-template-columns: 3fr 1fr;
+    gap: 10px;
+    padding: 50px 20px;
 }
-.products-info{
+.products-display{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+}
+.selected-phone{
+    padding: 30px 30px;
+    box-shadow: -2px 5px 4px rgba(120, 110, 100, .6);
+    height: 200px;
+    margin-top: 50px;
+    position: sticky;
+    top: 100px;
+}
+.selected-phone h4{
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+.selected-phone button{
+    padding:10px;
+    margin-bottom: 10px;
+    cursor: pointer;
 }
