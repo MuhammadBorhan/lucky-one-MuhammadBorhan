@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "GLOCK 17 Gen5",
+        "price": "540",
+        "img": "https://raw.githubusercontent.com/mir-hussain/guns/main/guns/glock.png"
+    },
+    {
+        "id": 2,
+        "name": "GLOCK 17 Gen5",
+        "price": "540",
+        "img": "https://raw.githubusercontent.com/mir-hussain/guns/main/guns/glock.png"
+    },
+    {
+        "id": 3,
+        "name": "GLOCK 17 Gen5",
+        "price": "540",
+        "img": "https://raw.githubusercontent.com/mir-hussain/guns/main/guns/glock.png"
+    },
+    {
+        "id": 4,
+        "name": "GLOCK 17 Gen5",
+        "price": "540",
+        "img": "https://raw.githubusercontent.com/mir-hussain/guns/main/guns/glock.png"
+    },
+    {
+        "id": 5,
+        "name": "GLOCK 17 Gen5",
+        "price": "540",
+        "img": "https://raw.githubusercontent.com/mir-hussain/guns/main/guns/glock.png"
+    },
+    {
+        "id": 6,
+        "name": "GLOCK 17 Gen5",
+        "price": "540",
+        "img": "https://raw.githubusercontent.com/mir-hussain/guns/main/guns/glock.png"
+    },
+    {
+        "id": 7,
+        "name": "GLOCK 17 Gen5",
+        "price": "540",
+        "img": "https://raw.githubusercontent.com/mir-hussain/guns/main/guns/glock.png"
+    },
+    {
+        "id": 8,
+        "name": "GLOCK 17 Gen5",
+        "price": "540",
+        "img": "https://raw.githubusercontent.com/mir-hussain/guns/main/guns/glock.png"
+    },
+    {
+        "id": 9,
+        "name": "GLOCK 17 Gen5",
+        "price": "540",
+        "img": "https://raw.githubusercontent.com/mir-hussain/guns/main/guns/glock.png"
+    },
+    {
+        "id": 10,
+        "name": "GLOCK 17 Gen5",
+        "price": "540",
+        "img": "https://raw.githubusercontent.com/mir-hussain/guns/main/guns/glock.png"
+    }
+]
