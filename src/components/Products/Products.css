@@ -11,7 +11,7 @@
 .selected-phone{
     padding: 30px 30px;
     box-shadow: -2px 5px 4px rgba(120, 110, 100, .6);
-    height: 200px;
+    height: 210px;
     margin-top: 50px;
     position: sticky;
     top: 100px;
@@ -24,4 +24,16 @@
     padding:10px;
     margin-bottom: 10px;
     cursor: pointer;
+}
+
+@media screen and (max-width:767px) {
+    .products{
+        grid-template-columns:1fr 1fr;
+    }
+    .products-display{
+        grid-template-columns: 1fr;
+    }
+    .selected-phone{
+        height: 250px;
+    }
 }

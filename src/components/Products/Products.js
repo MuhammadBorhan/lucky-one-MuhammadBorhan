@@ -18,8 +18,8 @@ const Products = () => {
             </div>
             <div className='selected-phone'>
                 <h4>Selected Phones</h4>
-                <button>CHOOSE 1 FOR ME</button><br></br>
-                <button>CHOOSE AGAIN</button>
+                <button style={{ color: 'green', fontWeight: 'bold' }}>CHOOSE 1 FOR ME</button><br></br>
+                <button style={{ color: '#7C07B3', fontWeight: 'bold' }}>CHOOSE AGAIN</button>
             </div>
         </div>
     );

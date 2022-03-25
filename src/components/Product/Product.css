@@ -3,9 +3,44 @@ background-color: #fff;
 margin: 20px;
 border-radius: 20px;
 padding: 20px;
+position: relative;
 }
 .product img{
    width: 100%;
-   height: 80%;
+   height: 60%;
    padding: 20px;
+}
+.product h5{
+   font-size: 1.4rem;
+   margin-bottom: 5px;
+}
+.product p{
+   font-weight: bold;
+   font-size: 1.2rem;
+   margin-bottom: 50px;
+}
+.product button{
+   padding: 10px 0;
+   width: 100%;
+   font-size: 1.1rem;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   border: none;
+   background-color:aquamarine;
+   color: darkblue;
+   font-weight: bold;
+   cursor: pointer;
+}
+.icon{
+font-size: 22px;
+position: relative;
+top: 3px;
+margin-left: 5px;
+}
+
+@media screen and (max-width:767px) {
+.product p{
+   margin-bottom: 200px;
+}
 }
