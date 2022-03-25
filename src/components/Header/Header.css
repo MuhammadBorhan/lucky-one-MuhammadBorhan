@@ -1,0 +1,22 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1C2B35;
+    padding: 20px 100px;
+}
+.header h2{
+    color: white;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.header ul a{
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.header ul a:hover{
+    color:orange
+}
