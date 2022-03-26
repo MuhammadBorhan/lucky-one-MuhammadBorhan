@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# react-assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live site link [Create React App](https://splendorous-sunburst-d213a0.netlify.app/).
 
 ## Available Scripts
 
