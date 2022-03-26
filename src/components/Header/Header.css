@@ -27,6 +27,7 @@
    .header{
        display: flex;
        flex-direction: column;
+       margin-right: -20px;
    }
    .header h2{
        width: 400px;
