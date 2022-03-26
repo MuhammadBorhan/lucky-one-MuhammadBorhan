@@ -14,15 +14,16 @@ const Products = () => {
     }, []);
 
     const handleAddToCart = (product) => {
-        setCarts([...carts, product]);
-        if (carts.length >= 4) {
-            alert('this is over')
+
+        if (carts.length <= 3) {
+            setCarts([...carts, product]);
         }
     }
     const handleChooseForMe = () => {
-        const random = Math.floor(Math.random() * 4);
+        const random = Math.ceil(Math.random() * 4);
         console.log(random)
-        console.log(carts.length)
+        const chooseItem = carts.find(cart => cart.id === random)
+        alert(chooseItem.name)
     }
     const handleChooseAgain = () => {
         setCarts([])
@@ -39,7 +40,8 @@ const Products = () => {
                 {
                     carts.map(cart => <Cart key={cart.id} cart={cart}></Cart>)
                 }
-                <button onClick={handleChooseForMe} style={{ color: 'green', fontWeight: 'bold' }}>CHOOSE 1 FOR ME <Choosemodal></Choosemodal></button><br></br>
+
+                <button onClick={handleChooseForMe} style={{ color: 'green', fontWeight: 'bold' }}>CHOOSE FOR ME</button><br></br>
                 <button onClick={handleChooseAgain} style={{ color: '#7C07B3', fontWeight: 'bold' }}>CHOOSE AGAIN</button>
             </div>
         </div>
