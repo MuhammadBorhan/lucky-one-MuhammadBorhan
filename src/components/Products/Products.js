@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
+import Choosemodal from '../Choosemodal/Choosemodal';
 import Product from '../Product/Product';
 import './Products.css'
 
@@ -13,7 +14,18 @@ const Products = () => {
     }, []);
 
     const handleAddToCart = (product) => {
-        setCarts([...carts, product])
+        setCarts([...carts, product]);
+        if (carts.length >= 4) {
+            alert('this is over')
+        }
+    }
+    const handleChooseForMe = () => {
+        const random = Math.floor(Math.random() * 4);
+        console.log(random)
+        console.log(carts.length)
+    }
+    const handleChooseAgain = () => {
+        setCarts([])
     }
     return (
         <div className='products'>
@@ -27,8 +39,8 @@ const Products = () => {
                 {
                     carts.map(cart => <Cart key={cart.id} cart={cart}></Cart>)
                 }
-                <button style={{ color: 'green', fontWeight: 'bold' }}>CHOOSE 1 FOR ME</button><br></br>
-                <button style={{ color: '#7C07B3', fontWeight: 'bold' }}>CHOOSE AGAIN</button>
+                <button onClick={handleChooseForMe} style={{ color: 'green', fontWeight: 'bold' }}>CHOOSE 1 FOR ME <Choosemodal></Choosemodal></button><br></br>
+                <button onClick={handleChooseAgain} style={{ color: '#7C07B3', fontWeight: 'bold' }}>CHOOSE AGAIN</button>
             </div>
         </div>
     );

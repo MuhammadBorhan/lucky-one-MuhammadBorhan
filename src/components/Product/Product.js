@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaShoppingBasket } from 'react-icons/fa';
+import { FaShoppingCart } from 'react-icons/fa';
 
 import './Product.css'
 
@@ -10,7 +10,7 @@ const Product = ({ product, handleAddToCart }) => {
             <img src={img} alt="" />
             <h5>Name: {name}</h5>
             <p>Price: {price}</p>
-            <button onClick={() => handleAddToCart(product)}>Add to Cart <span className='icon'><FaShoppingBasket></FaShoppingBasket></span></button>
+            <button onClick={() => handleAddToCart(product)}>Add to Cart <span className='icon'><FaShoppingCart></FaShoppingCart></span></button>
         </div>
     );
 };
