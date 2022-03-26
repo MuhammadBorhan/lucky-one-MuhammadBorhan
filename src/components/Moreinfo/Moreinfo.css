@@ -1,0 +1,27 @@
+.moreinfo{
+    padding: 50px 100px;
+}
+.moreinfo h2{
+text-align: center;
+margin-bottom: 20px;
+}
+.moreinfo article{
+    background-color: rgb(199, 194, 194);
+    padding: 20px;
+}
+.moreinfo article h3{
+    margin-bottom: 10px;
+}
+.moreinfo article p{
+    line-height: 30px;
+}
+.moreinfo span{
+    font-size: 18px;
+    font-weight: bold;
+}
+@media screen and (max-width:767px) {
+    .moreinfo{
+        padding: 50px 30px;
+        margin-right: -30px;
+    }
+}

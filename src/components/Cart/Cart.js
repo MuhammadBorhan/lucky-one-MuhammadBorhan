@@ -3,7 +3,7 @@ import { FaTrashAlt } from 'react-icons/fa';
 import './Cart.css'
 
 const Cart = ({ cart }) => {
-    const { img, name, id } = cart;
+    const { img, name } = cart;
     return (
         <div className='cart'>
             <img src={img} alt="" />
