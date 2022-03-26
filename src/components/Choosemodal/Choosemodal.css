@@ -1,4 +1,10 @@
 .modal-button{
 color: green;
 font-weight: bold;
+border: none;
+padding-bottom: 1px !important;
+}
+.modal-heading{
+    padding: 10px;
+    font-size: 22px;
 }

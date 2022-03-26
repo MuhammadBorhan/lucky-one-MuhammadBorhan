@@ -1,17 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
+import Choosemodal from '../Choosemodal/Choosemodal';
 import Product from '../Product/Product';
 import './Products.css'
 
 const Products = () => {
     const [products, setProducts] = useState([]);
     const [carts, setCarts] = useState([]);
+    const [randoms, setRandoms] = useState([])
     useEffect(() => {
         fetch("data.json")
             .then(res => res.json())
             .then(data => setProducts(data))
     }, []);
 
+    //handle Add To Cart
     const handleAddToCart = (product) => {
 
         if (carts.length <= 3) {
@@ -19,18 +22,14 @@ const Products = () => {
 
         }
     }
+
+    // Handle choose for me
     const handleChooseForMe = () => {
-        carts.map(item => item)
-        const random = Math.floor(Math.random() * 4)
-        console.log(random)
-
-        /* for (let i = 0; i < carts.length; i++) {
-
-        } */
-
-
-
+        const item = carts[Math.floor(Math.random() * carts.length)]
+        setRandoms(item)
     }
+
+    // Handle choose again
     const handleChooseAgain = () => {
         setCarts([])
     }
@@ -49,7 +48,7 @@ const Products = () => {
 
                 <div>
 
-                    <button onClick={handleChooseForMe} style={{ color: 'green', fontWeight: 'bold' }}>CHOOSE FOR ME</button><br></br>
+                    <button onClick={handleChooseForMe} style={{ color: 'green', fontWeight: 'bold' }}><Choosemodal random={randoms}></Choosemodal></button><br></br>
                     <button onClick={handleChooseAgain} style={{ color: '#7C07B3', fontWeight: 'bold' }}>CHOOSE AGAIN</button>
                 </div>
             </div>

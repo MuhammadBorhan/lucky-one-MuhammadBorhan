@@ -15,7 +15,7 @@ const customStyles = {
 Modal.setAppElement('#root');
 
 
-const Choosemodal = () => {
+const Choosemodal = ({ random }) => {
     let subtitle;
     const [modalIsOpen, setIsOpen] = React.useState(false);
 
@@ -41,8 +41,10 @@ const Choosemodal = () => {
                 style={customStyles}
                 contentLabel="Example Modal"
             >
-                <button onClick={closeModal}>close</button>
-                <div>I am a modal</div>
+                <button className='modal-btn-times' onClick={closeModal}>close</button>
+                <div className='modal-heading'>
+                    <h4>{random.name}</h4>
+                </div>
             </Modal>
         </div>
     );
