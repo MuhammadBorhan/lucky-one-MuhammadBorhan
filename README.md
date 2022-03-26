@@ -1,6 +1,6 @@
 # react-assignment
 
-Live site link [Create React App](https://splendorous-sunburst-d213a0.netlify.app/).
+Live site link: https://splendorous-sunburst-d213a0.netlify.app/
 
 ## Available Scripts
 
